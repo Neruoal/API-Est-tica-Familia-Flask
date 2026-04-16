@@ -53,11 +53,13 @@ class FamilyStructure:
             if self._members[i]["id"] == id:
                 self._members.pop(i)
                 return True
+        return False
 
     def get_member(self, id):
         for member in self._members:
             if member["id"] == id:
                 return member
+        return None
     
 
     # This method is done, it returns a list with all the family members
